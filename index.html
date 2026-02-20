@@ -1,12 +1,265 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LUXE BEAUTY | Find Your Perfect Match</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#e8306e",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#211116",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "1rem",
+                        "lg": "2rem",
+                        "xl": "3rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+        .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
 </head>
-<body>
-    <h1>Hi iam mathew</h1>
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-display transition-colors duration-300">
+<!-- Top Navigation Bar -->
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="flex items-center justify-between h-20">
+<!-- Logo -->
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-3xl">flare</span>
+<h1 class="text-xl font-extrabold tracking-tighter uppercase">Luxe Beauty</h1>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-10">
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">SHOP</a>
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">ABOUT</a>
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">ACCOUNT</a>
+<a class="text-sm font-semibold tracking-wide hover:text-primary transition-colors" href="#">TUTORIALS</a>
+</nav>
+<!-- Search & Actions -->
+<div class="flex items-center gap-4 lg:gap-6">
+<div class="relative hidden sm:block">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-xl">search</span>
+<input class="pl-10 pr-4 py-2 bg-primary/5 border-none rounded-full text-sm focus:ring-1 focus:ring-primary w-48 lg:w-64" placeholder="Search essentials..." type="text"/>
+</div>
+<button class="p-2 hover:bg-primary/10 rounded-full transition-colors relative">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+<button class="p-2 bg-primary text-white rounded-full transition-colors shadow-lg shadow-primary/20">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-8">
+<!-- Editorial Dual Hero Section -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+<!-- Hero Card 1: Shade Matcher -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of diverse skin tones with foundation swatches" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1-kl2XJyKNeXkQh9DxiU8Teff9PPFywzzgiXMBFyeIeqq28EeIiPhwdoyb72r5itOYsKN-oKD-xMzUEkH1LCv7xyXrJCv2Ek9ild8Vl5docdyEC0gqtxHpHnTmoaHNbH66EcEAUCvJ0sWNmNhtJalsNovrhXsJCRwf0s5dqNjG_UmnUoLw3tXDtPxgg0Mnxqx40NP6nxOcTqSLTaTKooGMEFChDvwwIsnQ79ah4ghH9wr7DoELKJRL_EtWh-dZS-qxt3OkDC-v9Q')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 lg:p-12 w-full">
+<h2 class="text-white text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">Find Your <br/>Perfect Match</h2>
+<p class="text-white/80 text-lg mb-8 max-w-sm">Our AI-powered shade finder matches your unique skin tone in seconds.</p>
+<button class="bg-primary text-white px-8 py-4 rounded-full font-bold text-base tracking-wide hover:scale-105 transition-transform flex items-center gap-2">
+                        Find Your Shade
+                        <span class="material-symbols-outlined text-xl">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Hero Card 2: Tutorials -->
+<div class="group relative aspect-[4/5] overflow-hidden rounded-xl bg-slate-200">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Modern makeup application editorial shot" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAsn_KfkofYKI4KxeG_LpCUTXGEezgw0F-wrDzoswgUmyH99-fPIoDUxHj5eeQquctN8nLuUAd6ENLKMNmXyeZpS4LA4OHX5V22uMSRH2eQ0cUYrfnDY_CqyphKPbRBNGLTdqpT0miYWg7MxwDtbbF7JzMO06Ku07ZxzyKkMF5SgletVJgnycuVpRmo9iLXg3Yj5AUGyV-HOcy7ml4oYQK5v7A1usj1IJgRBl9Ylt3UWo1meNiirHNvGHXrZIKyAdP3EPAwCrSRGcA')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8 lg:p-12 w-full">
+<h2 class="text-white text-4xl lg:text-5xl font-extrabold mb-4 leading-tight">Master <br/>Your Look</h2>
+<p class="text-white/80 text-lg mb-8 max-w-sm">Editorial step-by-step guides for the modern minimalist aesthetic.</p>
+<button class="bg-white text-slate-900 px-8 py-4 rounded-full font-bold text-base tracking-wide hover:scale-105 transition-transform flex items-center gap-2">
+                        Watch Tutorials
+                        <span class="material-symbols-outlined text-xl">play_circle</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Featured Essentials Section -->
+<section class="mb-20">
+<div class="flex items-end justify-between mb-8">
+<div>
+<span class="text-primary font-bold text-sm tracking-widest uppercase mb-2 block">Curation</span>
+<h2 class="text-3xl font-extrabold">Featured Essentials</h2>
+</div>
+<a class="text-primary font-bold hover:underline flex items-center gap-1" href="#">
+                    Shop All
+                    <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+<!-- Horizontal Carousel -->
+<div class="flex overflow-x-auto gap-6 pb-8 hide-scrollbar">
+<!-- Product 1 -->
+<div class="min-w-[280px] lg:min-w-[320px] group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-white mb-4 relative">
+<div class="absolute top-4 right-4 z-10">
+<button class="size-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<img alt="Skin Silk Foundation bottle" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Premium glass foundation bottle with pump" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGnGhNMK4tUyyK8rThd1Eq9OO8c_mmvwdELOvHsjZ0xufCag7N7w1tSrRG95y1CLdWA0Dog1QAMIP6KA4aMQiNJS0i07AGiQZRJ_LHLO5BlWTU3pBHEA58wXrMXfNVm5ZCXtHcqshFprJ_nRZzqBQMID3Poy782LHTXQ2h4-bBmq8ejCdaj10Bxc8GyS561g1qyEAmoR1pqBedjh4MzxovlFmAqGN2OROmD3ynK_dUOt3uPt1Ikef0o8OwzEt_9BjWVXwgpb9NKqs"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-bold text-lg">Skin Silk Foundation</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Luminous finish • 40 Shades</p>
+</div>
+<p class="font-extrabold text-primary">$48.00</p>
+</div>
+<button class="mt-4 w-full py-3 border border-primary/20 rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                        Add to Bag
+                    </button>
+</div>
+<!-- Product 2 -->
+<div class="min-w-[280px] lg:min-w-[320px] group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-white mb-4 relative">
+<img alt="Radiant Concealer tube" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Elegant concealer tube with applicator" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVuB8P1zvH_KcnEfbRG8GOFJqwpa5nVXA9PaIPFxW8AIaSZNtOjl9Vtg8AeGwtJKqyOcz7J-omIVF3VolNFPOaXf0LRK0DBU033Am7mioTLkLZCCJmQfvc5fqKfqF1wNb2c_EWGDVESttSWExmGVWz6Wip0qm5cxLDM4rsHqYuzOgC-bI2beb8ipnY7btFlo-f3ZRNYbDPmz_PSr70w4wJg1rj2lap_1b5mes6rysyeeXvd3p3X5HD4aNl49L-v8xMkVpZ_l_jNQc"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-bold text-lg">Radiant Concealer</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Full coverage • Crease-proof</p>
+</div>
+<p class="font-extrabold text-primary">$32.00</p>
+</div>
+<button class="mt-4 w-full py-3 border border-primary/20 rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                        Add to Bag
+                    </button>
+</div>
+<!-- Product 3 -->
+<div class="min-w-[280px] lg:min-w-[320px] group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-white mb-4 relative">
+<img alt="Velvet Finish Setting Powder" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Minimalist setting powder compact" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCga4-gg1p7lw18VFynw6ZQnkXXxu0ZodHtlkJIvLfwRQ0W7q0QKlAxoO6F3GQ-S-_lb-xZd5k5yyKgrY4nPf8k7VazuGSGDkMvYj-JRflEmUD8xXILupXj9OE-F2OeEI_yGcbhrRNnuKMI59lzqeKF9uZ85Udbz_7QXpgnlHZDqEwOacwUzE5ZEEcLWrW4WgEvrVBhlxl8wYbXc_xhBMCiLv9cZxxveHImTLCC5xiKShfQSH3xP6O1Z0VmJy2ImLAsHaTFh4HWs-M"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-bold text-lg">Velvet Finish Powder</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Blurring • Ultra-fine</p>
+</div>
+<p class="font-extrabold text-primary">$36.00</p>
+</div>
+<button class="mt-4 w-full py-3 border border-primary/20 rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                        Add to Bag
+                    </button>
+</div>
+<!-- Product 4 -->
+<div class="min-w-[280px] lg:min-w-[320px] group cursor-pointer">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-white mb-4 relative">
+<img alt="Prep &amp; Prime Base" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Hydrating makeup primer tube" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSyQI6nZXJpitSSrYIyOMymZbanPH8w0F4ygzQ9Yl6I3Rsh-gUmNfE2ZkyMu7IUFLpZrizEMCxbJALyhQq6Xa4CXfLCkaZqgyew1vaqL2JyQXgT2_nH6heY4bU0mR-DxuJYs-aSht05aO1ZsnN4U_uV46j_aIQLmGQQ__HX6Qf1u5gBe9SWZOK0-lp5HaO_OP_arteSfCZYuDvBeiMCcqWVYnMD7m9yHjjxGWSuC8UskDMwVvejdGI1s2FsKtim9aBC6pyVKKZveU"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="font-bold text-lg">Prep &amp; Prime Base</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm">Hydrating • Long-wear</p>
+</div>
+<p class="font-extrabold text-primary">$42.00</p>
+</div>
+<button class="mt-4 w-full py-3 border border-primary/20 rounded-full font-bold text-sm hover:bg-primary hover:text-white transition-colors">
+                        Add to Bag
+                    </button>
+</div>
+</div>
+</section>
+<!-- Newsletter / Community Section -->
+<section class="bg-primary/5 rounded-xl p-8 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-12">
+<div class="max-w-md">
+<h2 class="text-3xl font-extrabold mb-4">Join Our Community</h2>
+<p class="text-slate-600 dark:text-slate-400 text-lg mb-8">Get early access to new launches, shade matching tips, and exclusive tutorial content.</p>
+<div class="flex flex-col sm:flex-row gap-3">
+<input class="flex-1 px-6 py-4 rounded-full bg-white border-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="Your email address" type="email"/>
+<button class="bg-primary text-white px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all">Subscribe</button>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4 w-full md:w-auto">
+<div class="size-32 lg:size-40 rounded-xl bg-slate-200 overflow-hidden shadow-xl">
+<img class="w-full h-full object-cover" data-alt="Community member wearing minimalist makeup" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJDn-SZx8VM3KwiOT8gX7rIRM0t7eu1FacFBzOAy0qU0IXvUd9UdrgYRVNEYGsQ6h7TFOsAQ7MOT9owqARD2HfdvX_-7g3G4hgkG36UYsycCfRzzpXkcI64oTtNelhXQo5EcAzINDbK-ib20onUjANlD7M5uW2DiPpjgGF6u_MnwnX-6yfAYEP9oKqWgZ4y-1JtKQ9S-MXsxkv9Gi-EuXqeTCmELXg9h2i0k1Rrm5Zzj6pfd5ECVsIyD4MCUqXCqtvceP6ZumRx0c"/>
+</div>
+<div class="size-32 lg:size-40 rounded-xl bg-slate-200 overflow-hidden shadow-xl mt-8">
+<img class="w-full h-full object-cover" data-alt="Lip gloss application detail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaCPEd4hF0nyiLx8qVDUdS1xy72VOwPaKmrWBlFh3ErkX483VDHVnuD6TQ2gIvvf-1mbd1oR20CPPBqOetyGJozknRILZI_5rUapSFOEduzdkHt4LhhildCyAjH8QV9C968A1Xt7LATi2ApyNkC5nZ8fcPHa-NnfSDR4G-uAPDd6hq44Pu9grZQnMp5msPZVvgHbT2IpeoYPg-Hi9COkZrE_zKlpiQiQ-GpAz3vFpZIbEeKJoBL7frEh6HsDW0xgAyLpYHQeEwW6A"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Simple Footer -->
+<footer class="max-w-7xl mx-auto px-6 lg:px-12 py-12 border-t border-primary/10 mt-20">
+<div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-2xl">flare</span>
+<h2 class="text-lg font-extrabold tracking-tighter uppercase">Luxe Beauty</h2>
+</div>
+<p class="text-slate-500 dark:text-slate-400 max-w-xs text-sm">Premium cosmetics designed for every skin tone. Clean, cruelty-free, and dermatologically tested.</p>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-12">
+<div>
+<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Shop</h4>
+<ul class="flex flex-col gap-3 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Face</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Eyes</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Lips</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Tools</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Info</h4>
+<ul class="flex flex-col gap-3 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Shipping</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Returns</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Sustainability</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Stockists</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-sm uppercase tracking-widest mb-6">Connect</h4>
+<ul class="flex flex-col gap-3 text-sm text-slate-500">
+<li><a class="hover:text-primary transition-colors" href="#">Instagram</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">TikTok</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Pinterest</a></li>
+<li><a class="hover:text-primary transition-colors" href="#">Youtube</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="pt-8 border-t border-primary/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 Luxe Beauty Editorial. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-primary" href="#">Privacy Policy</a>
+<a class="hover:text-primary" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>
