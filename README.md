@@ -2,27 +2,29 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# Luxe Beauty 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: Infinity Aura
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: Malavika A - ASIET
+- Member 2: Dhina Jobby Pynadath - ASIET
 
 ### Hosted Project Link
-[mention your project hosted link here]
+https://dhinajobby.github.io/Tink-Her-Hack-Dhina/
 
 ### Project Description
-[2-3 lines about what your project does]
+This project is a modern beauty website/application designed to enhance the customer experience through AI-based foundation shade matching, personalized tutorials, and professional makeup assistance booking.
+
+The platform aims to solve common problems faced by customers such as choosing the correct foundation shade online and finding nearby stores that have the product in stock.
 
 ### The Problem statement
-[What problem are you solving?]
+There are lack of shades for dark skin tones this website is made to solve the same.
 
 ### The Solution
-[How are you solving it?]
+We can detect the skin colour using Ai and match the foundation to the skin, it provides the stores to find said brands or the easiest way to get it.
 
 ---
 
@@ -31,10 +33,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used: Javascript
+- Frameworks used: 
+- Libraries used:  
+- Tools used:  VS code, git
 
 **For Hardware:**
 - Main components: [List main components]
